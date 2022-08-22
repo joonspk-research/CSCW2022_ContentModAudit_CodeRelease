@@ -1,7 +1,7 @@
 ## Measuring the Prevalence of Anti-Social Behavior in Online Communities.
-###### Joon Sung Park, Joseph Seering, Michael S. Bernstein. 2022. Proceedings of the ACM on Human-Computer Interaction (CSCW ’22) 
+##### Joon Sung Park, Joseph Seering, Michael S. Bernstein. 2022. Proceedings of the ACM on Human-Computer Interaction (CSCW ’22) 
 
-#### Background
+### Background
 This repository accompanies our CSCW'22 paper, "Measuring the Prevalence of Anti-Social Behavior in Online Communities," by Joon Sung Park, Joseph Seering, and Michael S. Bernstein. In it, we measured how much of the comments on Reddit are "macro-norm" violating and thus likely should have been moderated, and how much of them were actually moderated. We find that around 1 in 20 comments on the 97 most popular subreddits violate at least one of the macro norms, and only 5% of those violating comments are actually moderated. 
 
 This repository includes two ingridients that could help you conduct such measurement studies yourself: 1) the code for gathering the moderated comments and their content from Reddit subcommunities, and 2) the model for classifying "macro-norm" violating comments (those that are historically moderated in a majority of 100 most popular subreddits). We will layout how to run the code and model included in this README page. Please consider checking out our paper in the CSCW proceeding or the abstract below to learn more about our work and the method we used: 
