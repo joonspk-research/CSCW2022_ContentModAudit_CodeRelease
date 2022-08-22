@@ -24,13 +24,9 @@ pip install -r requirements.txt
 4) Run collector first to start live-stream all comments from your subreddits of interest (look at the global_variables.py file to see the subreddits that we have used in our analysis -- you can modify this file to specify other subreddits). Run verifier a day later to check which of the comments were removed. 
 
 ### Classifying Comments for Macro-Norm Violations 
-
-
+We define a comment to be macro-norm violating if most communities will choose to moderate it. To reflect this, we imeplement 97 classifers that are each trained on the moderation data of the 97 largest subreddits. You can find the models and their embeddings in the Google Drive here: 
 https://drive.google.com/drive/folders/1MYdPMYpUtM4VKNmK5AaCbxS-u3t6QT9Y?usp=sharing
 
+We shared the virtual environment folder as well in this release to make sure some of the libraries are still accessible for you (some of them are deprecated as of now so pip installing them might not get you what you need). Please feel free to download the entire package including the virtual environment, or only download the "src" folder and manually build the environment using the requirements.txt file. 
 
-
-
-
-
-
+To classify comments, place your input comments in the "input" folder in "src" (I left an example input csv file in there to show how it should be formatted) and run teh "output_classification" function in the classify.py file. Your output will be put in the "output" folder. 
